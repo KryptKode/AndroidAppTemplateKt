@@ -26,8 +26,9 @@ jobs:
         env:
           APP_BASE_URL: ${{ secrets.APP_BASE_URL }}
           APP_API_KEY: ${{ secrets.APP_API_KEY }}
-        run: echo BASE_URL="APP_BASE_URL" >> ./local.properties'
-             echo API_KEY="APP_API_KEY" >> ./local.properties'
+        run: |
+          echo BASE_URL="APP_BASE_URL" >> ./local.properties
+          echo API_KEY="APP_API_KEY" >> ./local.properties
 
       - uses: actions/cache@v2
         with:
@@ -52,8 +53,9 @@ jobs:
         env:
           APP_BASE_URL: ${{ secrets.APP_BASE_URL }}
           APP_API_KEY: ${{ secrets.APP_API_KEY }}
-        run: echo BASE_URL="APP_BASE_URL" >> ./local.properties'
-          echo API_KEY="APP_API_KEY" >> ./local.properties'
+        run: |
+          echo BASE_URL="APP_BASE_URL" >> ./local.properties
+          echo API_KEY="APP_API_KEY" >> ./local.properties
 
       - uses: actions/cache@v2
         with:
@@ -79,8 +81,9 @@ jobs:
         env:
           APP_BASE_URL: ${{ secrets.APP_BASE_URL }}
           APP_API_KEY: ${{ secrets.APP_API_KEY }}
-        run: echo BASE_URL="APP_BASE_URL" >> ./local.properties'
-          echo API_KEY="APP_API_KEY" >> ./local.properties'
+        run: |
+          echo BASE_URL="APP_BASE_URL" >> ./local.properties
+          echo API_KEY="APP_API_KEY" >> ./local.properties
 
       - uses: actions/cache@v2
         with:
@@ -106,8 +109,9 @@ jobs:
         env:
           APP_BASE_URL: ${{ secrets.APP_BASE_URL }}
           APP_API_KEY: ${{ secrets.APP_API_KEY }}
-        run: echo BASE_URL="APP_BASE_URL" >> ./local.properties'
-          echo API_KEY="APP_API_KEY" >> ./local.properties'
+        run: |
+          echo BASE_URL="APP_BASE_URL" >> ./local.properties
+          echo API_KEY="APP_API_KEY" >> ./local.properties
 
       - uses: actions/cache@v2
         with:
