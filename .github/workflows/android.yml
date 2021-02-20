@@ -24,10 +24,10 @@ jobs:
 
       - name: Add keys to local.properties
         env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-          API_KEY: ${{ secrets.API_KEY }}
-        run: echo BASE_URL="BASE_URL" >> ./local.properties'
-             echo API_KEY="API_KEY" >> ./local.properties'
+          APP_BASE_URL: ${{ secrets.APP_BASE_URL }}
+          APP_API_KEY: ${{ secrets.APP_API_KEY }}
+        run: echo BASE_URL="APP_BASE_URL" >> ./local.properties'
+             echo API_KEY="APP_API_KEY" >> ./local.properties'
 
       - uses: actions/cache@v2
         with:
@@ -50,10 +50,10 @@ jobs:
 
       - name: Add keys to local.properties
         env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-          API_KEY: ${{ secrets.API_KEY }}
-        run: echo BASE_URL="BASE_URL" >> ./local.properties'
-          echo API_KEY="API_KEY" >> ./local.properties'
+          APP_BASE_URL: ${{ secrets.APP_BASE_URL }}
+          APP_API_KEY: ${{ secrets.APP_API_KEY }}
+        run: echo BASE_URL="APP_BASE_URL" >> ./local.properties'
+          echo API_KEY="APP_API_KEY" >> ./local.properties'
 
       - uses: actions/cache@v2
         with:
@@ -77,10 +77,10 @@ jobs:
 
       - name: Add keys to local.properties
         env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-          API_KEY: ${{ secrets.API_KEY }}
-        run: echo BASE_URL="BASE_URL" >> ./local.properties'
-          echo API_KEY="API_KEY" >> ./local.properties'
+          APP_BASE_URL: ${{ secrets.APP_BASE_URL }}
+          APP_API_KEY: ${{ secrets.APP_API_KEY }}
+        run: echo BASE_URL="APP_BASE_URL" >> ./local.properties'
+          echo API_KEY="APP_API_KEY" >> ./local.properties'
 
       - uses: actions/cache@v2
         with:
@@ -104,10 +104,10 @@ jobs:
 
       - name: Add keys to local.properties
         env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-          API_KEY: ${{ secrets.API_KEY }}
-        run: echo BASE_URL="BASE_URL" >> ./local.properties'
-          echo API_KEY="API_KEY" >> ./local.properties'
+          APP_BASE_URL: ${{ secrets.APP_BASE_URL }}
+          APP_API_KEY: ${{ secrets.APP_API_KEY }}
+        run: echo BASE_URL="APP_BASE_URL" >> ./local.properties'
+          echo API_KEY="APP_API_KEY" >> ./local.properties'
 
       - uses: actions/cache@v2
         with:
