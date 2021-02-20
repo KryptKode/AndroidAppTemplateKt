@@ -32,15 +32,15 @@ allprojects {
 
     tasks.withType<KotlinCompile>().configureEach {
         kotlinOptions.freeCompilerArgs +=
-                listOf(
-                        "-Xuse-experimental=kotlin.Experimental",
-                        "-Xopt-in=kotlin.time.ExperimentalTime",
-                        "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
-                        "-Xopt-in=kotlin.RequiresOptIn",
-                        "-Xopt-in=kotlinx.coroutines.ObsoleteCoroutinesApi",
-                        "-Xopt-in=kotlinx.coroutines.InternalCoroutinesApi",
-                        "-Xopt-in=kotlinx.coroutines.FlowPreview"
-                )
+            listOf(
+                "-Xuse-experimental=kotlin.Experimental",
+                "-Xopt-in=kotlin.time.ExperimentalTime",
+                "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
+                "-Xopt-in=kotlin.RequiresOptIn",
+                "-Xopt-in=kotlinx.coroutines.ObsoleteCoroutinesApi",
+                "-Xopt-in=kotlinx.coroutines.InternalCoroutinesApi",
+                "-Xopt-in=kotlinx.coroutines.FlowPreview"
+            )
     }
 }
 
