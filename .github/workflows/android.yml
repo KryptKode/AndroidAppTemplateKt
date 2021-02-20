@@ -26,7 +26,8 @@ jobs:
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
           API_KEY: ${{ secrets.API_KEY }}
-        run: {{ '{ echo BASE_URL="BASE_URL" & echo API_KEY="API_KEY"; } >> ./local.properties' }}
+        run: echo BASE_URL="BASE_URL" >> ./local.properties'
+             echo API_KEY="API_KEY" >> ./local.properties'
 
       - uses: actions/cache@v2
         with:
