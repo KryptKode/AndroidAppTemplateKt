@@ -28,6 +28,11 @@ To build this project, you require:
 
 - Android Studio 4.1.0  or higher
 - Gradle 6.5 or higher
+- Add these to your `local.properties` file (you can remove them from the `build.gradle` if it does not suit your usecase)
+```
+BASE_URL="YOUR_BASE_URL"
+API_KEY="YOUR_BASE_URL"
+```
 
 ### Top features
 
